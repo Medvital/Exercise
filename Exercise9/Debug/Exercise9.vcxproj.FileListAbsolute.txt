@@ -1,2 +1,4 @@
 D:\Programs\Visual Studio\My Projects\Exercise\Exercise9\Debug\Exercise9.exe
 D:\Programs\Visual Studio\My Projects\Exercise\Exercise9\Debug\Exercise9.pdb
+C:\Users\va.medvedev\source\repos\Exercise\Exercise9\Debug\Exercise9.exe
+C:\Users\va.medvedev\source\repos\Exercise\Exercise9\Debug\Exercise9.pdb
