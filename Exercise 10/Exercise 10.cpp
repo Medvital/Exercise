@@ -16,14 +16,15 @@ struct student
     int score;
 };
 
-bool sortName(student Student[])
+bool sortName(const student &Student1, const student &Student2)
 {
-
-    return (Student[].score < Student[1].score); // Закончил здесь, писал сортировку
+    return (Student1.score < Student2.score); 
 }
 
 int main()
 {
+    setlocale(LC_ALL, "rus");
+
     int countOfStudents;
     cout << "Enter the number of students: ";
     cin >> countOfStudents;
@@ -33,14 +34,17 @@ int main()
     
     for (int i = 0; i < countOfStudents; i++)
     {
-        cout << "Type student's name and his score";
+        cout << "Type " << i + 1 << " student's name and his score";
         cin >> Student[i].name;
         cin >> Student[i].score;
     }
 
-    std::sort(Student.begin(), Student.end(), sortName ); // Закончил здесь, писал сортировку
+    std::sort(Student.begin(), Student.end(), sortName ); 
 
-    setlocale(LC_ALL, "rus");
-
+    for (int i = 0; i < countOfStudents; i++) 
+    {
+        cout << Student[i].name << " " << Student[i].score << endl;
+    }
+    
     return 0;
 }
